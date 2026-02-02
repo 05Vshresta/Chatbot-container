@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" href="style.css"/>
+       <title>Chatbot-container</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+       <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+      <div class="container">
+            <div class="chatbot-container d-flex flex-column justify-content-center">
+               <header class="main-container">
+                <h1>Meet Your Chatbot</h1>
+                <p>Your personal assistant is here to help</p>
+               </header>
+          
+               <header>
+                    <h5 class="sub-heading">Hello! I'm your friendly Chatbot assistant. How can I help you today?</h5>
+               </header>  
+
+             <div class="d-flex flex-row justify-content-center mb-5 mt-3">
+                <button class="btn btn-outline-primary button ">Say Hi</button>
+                <button class="btn btn-outline-primary button">What can you do?</button>
+                <button class="btn btn-outline-primary button">Tell me a joke</button>
+                <button class="btn btn-outline-primary button">Help</button>
+             </div>
+
+             <div class="chatbot-icon">
+                <a href="#" class="btn btn-light icon">
+                   <i class="fab fa-reddit"></i>
+                </a>
+             </div>
+
+              <div id="chatContainer" class="chat-container">
+              </div>
+
+
+             <div class="user-icon d-flex flex-row justify-content-end ">
+                <a href="#" class="btn btn-light logo">
+                    <i class="fas fa-user"></i>
+                </a>
+             </div>      
+             
+             <div class="d-flex flex-row justify-content-center m-3">
+                <input id="userInput"class="user-input" type="text" placeholder="Type your message here"/>
+                <button id="sendMsgBtn"class="btn btn-primary send-btn" onclick=sendMsgToChatbot()>
+                   <i class="fas fa-paper-plane"></i>
+                </button>
+             </div>
+                
+            </div>       
+        </div>
+ 
+     <script src="app.js"></script>
+   </body>
+</html>
+
+
+
+ 
