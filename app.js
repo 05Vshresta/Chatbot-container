@@ -1,4 +1,4 @@
-let chatbotMsgList = ["hi","hello","good morning","visit again","bye"];
+let chatbotMsgList = ["hi","hello","Good Afternoon","visit again","bye","My wallet is like an onion.....opening it makes me cry", "I followed my dreams...now I'm being chased my deadlines."];
 
 let chatContainerEl = document.getElementById("chatContainer");
 let userInputEl = document.getElementById("userInput");
@@ -32,3 +32,4 @@ function getReplyFromChatbot() {
     chatbotMsgEl.classList.add("msg-from-chatbot");
     msgContainerEl.appendChild(chatbotMsgEl);
 }
+
