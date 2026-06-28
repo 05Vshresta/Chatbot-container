@@ -1,5 +1,5 @@
-let chatbotMsgList = ["hi","hello","Good Afternoon","visit again","bye","My wallet is like an onion.....opening it makes me cry", "I followed my dreams...now I'm being chased my deadlines."];
-
+let chatbotMsgList=[ "Hi" , "Hello! how can I help you today?", "How are you", "I'm fine.Thanks for asking", "Good Afternoon","HTML is used to create web pages","Goodbye! Hve a nice day",];
+ 
 let chatContainerEl = document.getElementById("chatContainer");
 let userInputEl = document.getElementById("userInput");
 
@@ -17,12 +17,13 @@ function sendMsgToChatbot() {
 
     userInputEl.value = " ";
     getReplyFromChatbot();
+    
 }
 
 function getReplyFromChatbot() {
     let noOfChatbotMsgs = chatbotMsgList.length;
     let chatbotMsg = chatbotMsgList[Math.ceil(Math.random() * noOfChatbotMsgs) - 1];
-    
+
     let msgContainerEl = document.createElement("div");
     msgContainerEl.classList.add("msg-from-chatbot-container");
     chatContainerEl.appendChild(msgContainerEl);
@@ -31,5 +32,7 @@ function getReplyFromChatbot() {
     chatbotMsgEl.textContent = chatbotMsg;
     chatbotMsgEl.classList.add("msg-from-chatbot");
     msgContainerEl.appendChild(chatbotMsgEl);
+
 }
+
 
